@@ -1,7 +1,8 @@
 <div align="center">
   <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-58.png" alt="The Hunter Mouse Screenshot">
 </div>
-# 🐭 The Hunter Mouse: A Thrilling 3D Platformer Adventure! 🌟
+
+<span style="font-size: 36pt;">🐭 The Hunter Mouse: A Thrilling 3D Platformer Adventure! 🌟</span>
 Welcome to "The Hunter Mouse," a heart-pounding journey through enchanting realms and perilous challenges! 🎮
 
 In this adrenaline-fueled 3D platformer, step into the tiny shoes of a courageous mouse on a mission to conquer treacherous landscapes, outsmart cunning adversaries, and unveil ancient mysteries. 🏆
