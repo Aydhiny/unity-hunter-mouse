@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 600ea288dadddba479093b136b744f3e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169972
+  packageName: Colorful City - Low poly models with multiple color schemes
+  packageVersion: 1.0
+  assetPath: Assets/Triangularity/ColorfulCity/Scripts/SimpleCameraController.cs
+  uploadId: 371667

@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 23714ef6ca9457542bb5483c5b5d1bdf
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169972
+  packageName: Colorful City - Low poly models with multiple color schemes
+  packageVersion: 1.0
+  assetPath: Assets/Triangularity/ColorfulCity/Scripts/libs/ColorSchemeManager.dll
+  uploadId: 371667

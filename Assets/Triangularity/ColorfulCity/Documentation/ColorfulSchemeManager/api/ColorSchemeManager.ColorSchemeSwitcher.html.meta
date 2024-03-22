@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 480e70d46a6549d49b5b9b4f5df70b91
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169972
+  packageName: Colorful City - Low poly models with multiple color schemes
+  packageVersion: 1.0
+  assetPath: Assets/Triangularity/ColorfulCity/Documentation/ColorfulSchemeManager/api/ColorSchemeManager.ColorSchemeSwitcher.html
+  uploadId: 371667
