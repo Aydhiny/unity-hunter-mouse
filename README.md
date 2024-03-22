@@ -18,6 +18,6 @@ Captivating Soundtrack: Immerse yourself in the enchanting world of "The Hunter 
 
 Screenshots:
 <div align="center">
-  <img src="[https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-58.png" alt="The Hunter Mouse Screenshot](https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-38.png)">
+  <img src="[https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-58.png" alt="The Hunter Mouse Screenshot](https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-38.png">
 </div>
 Are you ready to embark on an unforgettable adventure? Join the ranks of the bravest mice and become the ultimate hunter in "The Hunter Mouse"! 🧀✨
