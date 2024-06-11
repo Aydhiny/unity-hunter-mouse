@@ -1,12 +1,15 @@
 # 🐭 The Hunter Mouse: A Thrilling 3D Platformer Adventure! 🌟
+Download link: https://gamejolt.com/games/huntermouse/902524
 <div align="center">
-  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-58.png" alt="The Hunter Mouse Screenshot">
+  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshot-2024-06-04-16-18-21.png" alt="The Hunter Mouse Screenshot">
 </div>
 
-In this adrenaline-fueled 3D platformer, step into the tiny shoes of a courageous mouse on a mission to conquer treacherous landscapes, outsmart cunning adversaries, and unveil ancient mysteries. 🏆
+Dive into the world of the spark mice! After pirates of the Bayou have taken over your land, your friends and supplies have gone into the wrong hands!
+
+Are you a good enough hunter to save your friends and to restore peace to the valley?
 
 Features:
-Immersive Environments: Traverse lush forests, ancient ruins, and mysterious caverns, each brimming with secrets and surprises.
+Immersive Environments: Traverse tropical islands, icy caverns, and roadways, each brimming with secrets and surprises.
 
 Epic Challenges: Test your agility and wits as you leap across perilous gaps, evade cunning traps, and outmaneuver crafty foes.
 
@@ -14,10 +17,12 @@ Mystery and Adventure: Unravel the secrets of each level, from hidden artifacts 
 
 Engaging Gameplay: With intuitive controls and dynamic mechanics, experience an adventure like no other, keeping you on the edge of your seat.
 
-Captivating Soundtrack: Immerse yourself in the enchanting world of "The Hunter Mouse" with a captivating soundtrack that sets the mood for every epic moment.
+Captivating Soundtrack: Immerse yourself in the enchanting world of "The Hunter Mouse" with a captivating soundtrack that sets the mood for every epic moment. All created by Ajdin Mehmedovic (aydhiny_beatz).
 
 Screenshots:
 <div align="center">
-  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshots/screenshot-2024-03-22-16-37-44.png" alt="The Hunter Mouse">
+  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshot-2024-06-04-16-46-24.png" alt="The Hunter Mouse">
+  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshot-2024-06-04-16-53-59.png" alt="The Hunter Mouse">
+  <img src="https://github.com/Aydhiny/unity-hunter-mouse/blob/main/screenshot-2024-06-04-16-57-48.png" alt="The Hunter Mouse">
 </div>
 Are you ready to embark on an unforgettable adventure? Join the ranks of the bravest mice and become the ultimate hunter in "The Hunter Mouse"! 🧀✨
