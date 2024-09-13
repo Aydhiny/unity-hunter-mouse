@@ -9,12 +9,32 @@ public class Bomb : MonoBehaviour
     public float knockbackRadius, exploForce;
 
     public float pushBack;
+    public AudioSource bombSrc;
+    public AudioClip clip;
+    private void Start()
+    {
+        clip = Resources.Load<AudioClip>("bomb");
+        bombSrc = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         Instantiate(explo, transform.position, transform.rotation);
         knockback();
         Destroy(gameObject);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Obstacle"))
+        {
+            if (bombSrc != null && clip != null)
+            {
+                bombSrc.PlayOneShot(clip);
+            }
+            Destroy(gameObject);
+        }
+    }
+
     void knockback() 
     {
         Collider[] colls = Physics.OverlapSphere(transform.position, knockbackRadius);

@@ -10,6 +10,14 @@ public class Sword : MonoBehaviour
     public float knockbackPower, knockbackEnemyPower;
     public GameObject hitFx;
 
+    public AudioSource hitSoundSource;
+    public AudioClip hitSoundClip;
+    void Start()
+    {
+        // Find the audio source with the tag "swordSrc"
+        hitSoundSource = GameObject.FindGameObjectWithTag("swordSrc").GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Enemy") 
@@ -17,12 +25,21 @@ public class Sword : MonoBehaviour
             other.GetComponent<MeleeAI>().TakeDamage(SwordDamage);
             Instantiate(hitFx, other.transform);
             knockbackEnemy(other.gameObject);
+            PlayHitSound();
+        }
+        if (other.gameObject.tag == "LevelBoss")
+        {
+            other.GetComponent<MeleeAI>().TakeDamage(SwordDamage);
+            Instantiate(hitFx, other.transform);
+            knockbackEnemy(other.gameObject);
+            PlayHitSound();
         }
         if (other.gameObject.tag == "EnemyRange")
         {
             other.GetComponent<RangeAI>().TakeDamage(SwordDamage);
             Instantiate(hitFx, other.transform);
             knockbackEnemy(other.gameObject);
+            PlayHitSound();
         }
 
         if (other.gameObject.tag == "Interactable") 
@@ -35,6 +52,14 @@ public class Sword : MonoBehaviour
             Vector3 dif = go.transform.position - transform.position;
             dif = dif.normalized * knockbackPower;
             go.GetComponent<Rigidbody>().AddForce(dif, ForceMode.Impulse);
+        }
+    }
+    void PlayHitSound()
+    {
+        if (hitSoundSource != null && hitSoundClip != null)
+        {
+            hitSoundSource.clip = hitSoundClip;
+            hitSoundSource.Play();
         }
     }
 

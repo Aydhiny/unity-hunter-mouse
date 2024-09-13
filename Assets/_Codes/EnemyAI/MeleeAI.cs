@@ -34,7 +34,7 @@ public class MeleeAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerTransform != null && alive) 
+        if (playerTransform != null && alive)
         {
             float currentDis = Vector3.Distance(transform.position, playerTransform.position);
 
@@ -46,28 +46,27 @@ public class MeleeAI : MonoBehaviour
                 agent.SetDestination(playerTransform.position);
                 SpiderAnimator.SetBool("canWalk", true);
                 SpiderAnimator.SetBool("canAttack", false);
-            } 
-
-            else if(currentDis <= meleeRange) 
+            }
+            else if (currentDis <= meleeRange)
             {
                 lookatPlayer();
                 SpiderAnimator.SetBool("canWalk", false);
                 SpiderAnimator.SetBool("canAttack", true);
                 print("Attack!");
             }
-            else 
+            else
             {
                 SpiderAnimator.SetBool("canAttack", false);
                 SpiderAnimator.SetBool("canWalk", false);
                 agent.SetDestination(StartPos);
             }
         }
-        else 
+        else
         {
             playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
-        if(enemyHP <= 0 && alive) 
+        if (enemyHP <= 0)
         {
             alive = false;
             SpiderAnimator.SetTrigger("canDie");

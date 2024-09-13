@@ -1,0 +1,62 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class pauseMenu : MonoBehaviour
+{
+    public GameObject pausePanel;
+    private List<AudioSource> allAudioSources = new List<AudioSource>();
+
+    private void Start()
+    {
+        pausePanel.SetActive(false);
+        // Find all AudioSources in the scene and add them to the list
+        AudioSource[] foundAudioSources = FindObjectsOfType<AudioSource>();
+        allAudioSources.AddRange(foundAudioSources);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (pausePanel.activeSelf)
+            {
+                Continue();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
+
+    public void Pause()
+    {
+        pausePanel.SetActive(true);
+        Time.timeScale = 0;
+
+        // Pause all audio sources
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            if (audioSource != null)
+            {
+                audioSource.Pause();
+            }
+        }
+    }
+
+    public void Continue()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+
+        // Resume all audio sources
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            if (audioSource != null)
+            {
+                audioSource.UnPause();
+            }
+        }
+    }
+}

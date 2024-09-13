@@ -19,11 +19,15 @@ public class RangeAI : MonoBehaviour
 
     public int enemyHP;
     public GameObject DestroyFX;
+
+    public AudioClip explosionSound; // Assign the explosion sound AudioClip in the Inspector
+    public AudioSource explosionAudioSource;
     // Start is called before the first frame update
     void Start()
     {
         StartPosition = transform.position;
         agent = GetComponent<NavMeshAgent>();
+        explosionAudioSource = GameObject.FindGameObjectWithTag("swordSrc").GetComponent<AudioSource>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -53,9 +57,14 @@ public class RangeAI : MonoBehaviour
                 agent.SetDestination(StartPosition);
             }        
         }
-        else 
+        else if (playerTransform == null)
         {
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
+            if (playerTransform == null)
+            {
+                // Player object is still null, so we cannot proceed further
+                return;
+            }
         }
 
 
@@ -74,6 +83,11 @@ public class RangeAI : MonoBehaviour
         b.GetComponent<Rigidbody>().AddForce(dir * bombForce);
         b.GetComponent<Rigidbody>().useGravity = true;
         Destroy(b, 10);
+        if (explosionSound != null && explosionAudioSource != null)
+        {
+            explosionAudioSource.clip = explosionSound;
+            explosionAudioSource.PlayOneShot(explosionSound);
+        }
     }
 
     public void TakeDamage(int dmg)
